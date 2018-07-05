@@ -8,10 +8,9 @@ def line(katz_deli)
   else
     announcement = "The line is currently:"
     katz_deli.each_with_index do |index, name|
-      annoucement.concat("#{index + 1}. #{name}")
+      announcement.concat("#{index + 1}. #{name}")
     end
-    puts annoucement
-  end
+    puts announcement
 end
 
 

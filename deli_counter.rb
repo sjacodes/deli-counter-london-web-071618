@@ -7,7 +7,7 @@ def line(katz_deli)
   else
     announcement = "The line is currently:"
     katz_deli.each_with_index do |index, name|
-      announcement.concat("#{index.to_a + 1}. #{name}")
+      announcement.concat("#{index.to_s + 1}. #{name}")
     end
     puts announcement
   end

@@ -11,11 +11,6 @@ def line(katz_deli)
   end
 end
 
-
-   if deli_line.size > 0
-      deli_line.each_with_index do |name, index|
-        report.concat(" #{index + 1}. #{name}")
-      end
       
 
 def take_a_number(katz_deli, new_person)

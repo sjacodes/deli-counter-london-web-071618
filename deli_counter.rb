@@ -3,13 +3,12 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     announcement = "The line is currently:"
-    katz_deli.each_with_index do |index, name|
-      announcement.concat("#{index.to_s + 1}. #{name}")
+    katz_deli.each_with_index do |name, index|
+      announcement.concat(" #{index.to_i + 1}. #{name}")
     end
     puts announcement
   end
 end
-
       
 
 def take_a_number(katz_deli, new_person)
